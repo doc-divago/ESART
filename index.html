@@ -33,7 +33,7 @@
 <a-scene vr-mode-ui="enabled: false">
   <a-assets>
     <img id="cddc-logo" src="assets/cddc-logo.jpg">
-    <video id="newsroom" src="Newsroom.mp4" loop="false" webkit-playsinline="true" playsinline="true">
+    <video id="newsroom" src="Newsroom.mp4" loop="false" webkit-playsinline playsinline>
   </a-assets>
   <a-entity id="wrapper" position="0 -8 0">
 
@@ -43,7 +43,7 @@
     <a-video src="#newsroom" width="16" height="9" position="2 3 -15"></a-video>
     <a-plane position="0 0 -5.0" rotation="-90 0 0" width="7" height="7" src="#cddc-logo" shadow></a-plane>
 
-    <a-text id="welcome" value="T005 - Tweaking video parameters" scale="75 75 75" color="#FF0000" position="-30 0 -150"></a-text>
+    <a-text id="welcome" value="T005 - playsinline" scale="75 75 75" color="#FF0000" position="-30 0 -150"></a-text>
     <!-- look-at="[gps-camera]" -->
 
   </a-entity><!-- /wrapper -->
